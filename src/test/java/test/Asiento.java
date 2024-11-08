@@ -12,8 +12,8 @@ public class Asiento {
 				|| colorCambiar.equals("negro") 
 				|| colorCambiar.equals("blanco")) {
 			color = colorCambiar;
-			return "Se cambió el color del asiento a: "+ color;
+			return color;
 		}			
-		return "No se pudo cambiar el color del asiento";
+		return color;
 	}
 }
