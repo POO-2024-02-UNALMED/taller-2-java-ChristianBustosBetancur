@@ -29,12 +29,15 @@ public class Auto {
 			return "Las piezas no son originales";
 			
 		}
-		for (Asiento asiento : asientos) {
-	        if (!asiento.registro.equals(this.registro)
-	        		&& asiento != null) {
-	            return "Las piezas no son originales";
-	        }
-		}
+        if(asientos != null){
+            for (Asiento asiento : asientos) {
+                if (!asiento.registro.equals(this.registro)
+                        && asiento != null) {
+                    return "Las piezas no son originales";
+                }
+            }
+        }
+		
 		
 		return "Auto original";
 	}			
